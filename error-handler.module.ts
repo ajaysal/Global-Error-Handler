@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AaAlertComponent } from './aa-alert/aa-alert.component';
+import { AlertComponent } from './alert/alert.component';
 import { LoggerService, NotificationService } from '@shared/error-handler-notify/services';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
 // Toastr configuration
@@ -26,7 +26,7 @@ export class CustomOption extends ToastOptions {
       {provide: ToastOptions, useClass: CustomOption}
     ],
     exports: [
-        AaAlertComponent
+        AlertComponent
     ]
 })
 
