@@ -14,7 +14,7 @@ export class CustomOption extends ToastOptions {
 
 @NgModule({
     declarations: [
-        AaAlertComponent
+        AlertComponent
     ],
     imports: [
         CommonModule,
